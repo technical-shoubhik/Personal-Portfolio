@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <style>
+        /* Adding Google Fonts */
+
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+
+
+        #welcome-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.788);
+            /* height: 450px; */
+            height: 100vh;
+            position: relative;
+
+        }
+
+        #welcome-section::before {
+            content: "";
+            background: url('/img/bg.jpg') no-repeat center center/cover;
+            position: absolute;
+            z-index: -1;
+            opacity: 1;
+            height: 100%;
+            width: 100%;
+        }
+
+        .heading {
+            /* text-shadow: 0px 0px 20px black; */
+            font-family: 'Righteous', cursive;
+            font-size: 80px;
+            color: rgb(255, 204, 110);
+            transition: transform 0.3s ease-out;
+
+        }
+
+        .sub-head {
+            /* text-shadow: 0px 0px 15px black; */
+            /* font-family: 'Epilogue', sans-serif; */
+            font-family: 'Satisfy', cursive;
+            font-size: 55px;
+            color: rgb(113, 250, 255);
+            transition: transform 0.3s ease-out;
+            margin: 15px 0px;
+
+        }
+
+        .project-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0px 20px;
+            background-color: rgb(52 70 95);
+        }
+
+        .project-section-heading {
+            font-size: 55px;
+        }
+
+        .project-section h1 {
+            font-size: 50px;
+            margin: 20px 0px;
+            color: white;
+        }
+
+        .project-flex {
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .box {
+            transition: transform 0.3s ease-out;
+        }
+
+        .box:hover {
+            box-shadow: 0px 0px 15px rgb(73, 73, 73);
+            transform: scale(1.04);
+            text-decoration: none;
+        }
+
+        .box img {
+            margin: 5px 8px;
+            height: 220px;
+        }
+
+        .box h2 {
+            color: white;
+        }
+
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-items: center;
+        }
+
+        footer h1 {
+            font-size: 55px !important;
+            color: white !important;
+            text-align: center !important;
+            text-shadow: 0px 0px 15px black;
+        }
+
+        .buttons-flex {
+            margin: 2px auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-items: center;
+        }
+
+        .item {
+            margin: 5px 25px;
+            display: flex;
+            align-content: center;
+            justify-items: center;
+            color: white;
+            width: 150px;
+            transition: transform 0.3s ease-out;
+        }
+
+        .item:hover {
+            text-decoration: none;
+            transform: scale(1.1);
+            color: rgb(187, 187, 187);
+        }
+
+        .item h3 {
+            margin: auto;
+        }
+
+        .footer-heading {
+            font-size: 45px;
+            transition: transform 0.3s ease-out;
+            margin: auto;
+        }
+
+        .footer-heading:hover {
+            transform: scale(1.08)
+        }
+
+        .copyright {
+            color: white;
+            text-align: center;
+            background-color: rgb(29, 29, 29);
+        }
+
+
+        /* Utility Classes */
+        .heading:hover {
+            transform: scale(1.1);
+        }
+
+        .sub-head:hover {
+            transform: scale(1.1);
+        }
+    </style>
+
+
+    <title>technical_shoubhik</title>
+</head>
+
+<body>
+    <!-- FreeCodeCamp JavaScript File -->
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+    <!-- Navigation Bar -->
+
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Welcome Section -->
+
+    <div id="welcome-section">
+
+        <h1 id="about" class="heading">Hey! i'm Shoubhik</h1>
+        <p class="sub-head">
+            < <u>A Web Developer</u> />
+        </p>
+
+    </div>
+
+
+    <!-- Project section -->
+
+
+    <div id="projects" class="project-section">
+
+        <h1 class="heading">Some of my Projects</h1>
+
+        <div id="work" class="project-flex">
+
+            <a href="#" href="#" class="box project-tile" id="box1">
+                <img src="/img/thumbnail/survey-form.jpg" alt="Image">
+                <h2 class="box-head project-title">Survey Form</h2>
+            </a>
+
+            <a href="#" class="box project-tile" id="box1">
+                <img src="/img/thumbnail/product-landing-page.jpg" alt="Image">
+                <h2 class="box-head project-title">Product Landing Page</h2>
+            </a>
+
+            <a href="#" class="box project-tile" id="box1">
+                <img src="/img/thumbnail/tribute-page.jpg" alt="Image">
+                <h2 class="box-head project-title">Tribtute Page</h2>
+            </a>
+
+            <a href="#" class="box project-tile" id="box1">
+                <img src="/img/thumbnail/coding-blog-website.jpg" alt="Image">
+                <h2 class="box-head project-title">Coding Blog Website</h2>
+            </a>
+
+            <div class="box project-tile" id="box1">
+                <img src="/img/thumbnail/personal-portfolio-website.jpg" alt="Image">
+                <h2 class="box-head project-title">Personal Portfolio Website</h2>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer id="contact" class="bg-dark">
+
+        <h1 class="heading footer-heading">Let's Work Together!</h1>
+
+        <div class="buttons-flex">
+
+            <a id="profile-link" href="https://github.com/technical-shoubhik" target="_blank" class="item">
+                <img src="https://img.icons8.com/ios-glyphs/48/000000/github.png" />
+                <h3>GitHub</h3>
+            </a>
+
+            <a href="https://instagram.com/technical_shoubhik" target="_blank" class="item">
+                <img src="https://img.icons8.com/material-rounded/48/000000/instagram-new.png" />
+                <h3>Instagram</h3>
+            </a>
+
+        </div>
+        <div class="copyright">Copyright 2020-2021 @Technical-Shoubhik. All Rights Reserved.</div>
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
