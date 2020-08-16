@@ -17,5 +17,5 @@ Instagram Profile - https://instagram.com/technical_shoubhik/
 
 ## Full Source Code of Working Website
 
-This webpage was just a demo, if you're interested in buying site then contact me :). i provide life time support!
+This webpage was just a demo, if you're interested in buying site then contact me :). i'll give life time support!
 
